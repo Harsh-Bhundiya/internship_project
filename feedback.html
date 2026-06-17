@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div id="project">
+            <img  id="cal_icon" src="images/calender.svg" alt="" >
+            <h2>
+                <span id="white_text">Event</span>
+                <span id="purple_text">Feedback</span>
+            </h2>
+       </div>
+
+       <div id="main">
+            <a href="#" id="home_a">Home</a>
+            <a href="#" id="event_a">Events</a>
+            <a href="#" id="feedback_a">Feedback</a>
+            <a href="#" id="review_a">Reviews</a>
+            
+       </div>
+       <div class="btns">
+        <button>Get started</button>
+       </div>
+    </header>
+
+    <div id="upper">
+        <h1>
+            <span id="white_text">Submit </span>
+            <span id="purple_text">Feedback</span>
+        </h1>
+        <h3>Share your experience and help us improve future events.</h3>
+        <div id="empty_line"></div>
+    </div>
+
+
+    <section id="feedback_page">
+        <div id="feedback_left">
+            <label>Event Name</label>
+            <select name="eventselector" id="eventselector">
+                <option value="default">select an event</option>
+                <option value="hackathon">Hackathon</option>
+                <option value="webdev">Web Development</option>
+                <option value="ai">Artificial intelligence</option>
+                <option value="seminar">Data Analytics Seminar</option>
+            </select>
+            
+            <label>Your Name</label>
+            <input type="text"  id="username" placeholder="enter your name">
+
+            <label>Email Address</label>
+            <input type="email"  id="email" placeholder="enter your email">
+
+            <label>Overall Rating</label>
+
+            <div id="stars">
+               <span class="star">&#9734;</span>
+               <span class="star">&#9734;</span>
+               <span class="star">&#9734;</span>
+               <span class="star">&#9734;</span>
+               <span class="star">&#9734;</span>
+            </div>
+
+            <label>Your Feedback</label>
+
+            <textarea id="specific" placeholder="enter your feedback here"></textarea>
+
+            <button id="submit_btn">Submit Feedback</button>
+
+        </div>
+
+        <div id="feedback_right">
+
+        <h2>Feedback Overview</h2>
+
+        <div class="stat">
+            <h3 id="avg_rating">0.0 / 5</h3>
+            <p>Average Rating</p>
+        </div>
+
+        <div class="stat">
+            <h3 id="positive">0%</h3>
+            <p>Positive Feedback</p>
+        </div>
+
+        <div class="stat">
+            <h3 id="reviews">0</h3>
+            <p>Total Reviews</p>
+        </div>
+
+        <div class="stat">
+            <h3 id="events">0</h3>
+            <p>Events Completed</p>
+        </div>
+
+        <h3>Rating Distribution</h3>
+
+        <div class="rating_row">
+            <span>5 Star</span>
+            <div class="bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="rating_row">
+            <span>4 Star</span>
+            <div class="bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="rating_row">
+            <span>3 Star</span>
+            <div class="bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="rating_row">
+            <span>2 Star</span>
+            <div class="bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="rating_row">
+            <span>1 Star</span>
+            <div class="bar"><div class="fill"></div></div>
+        </div>
+
+    </div>
+    </section>
+    <script src="feedback.js"></script>
+</body>
+</html>

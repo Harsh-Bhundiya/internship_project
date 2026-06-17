@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div id="project">
+            <img  id="cal_icon" 
+            src="images/calender.svg" alt="" >
+            <h2>
+                <span id="white_text">Event</span>
+                <span id="purple_text">Feedback</span>
+            </h2>
+       </div>
+
+       <div id="main">
+            <a href="#" id="home_a">Home</a>
+            <a href="#" id="event_a">Events</a>
+            <a href="#" id="feedback_a">Feedback</a>
+            <a href="#" id="review_a">Reviews</a>
+            
+       </div>
+       <div class="btns" id="getstarted">
+        <button>Get started</button>
+       </div>
+    </header>
+
+    <section id="reviews_page">
+
+    <div id="reviews_heading">
+        <h1>Event <span>Reviews</span></h1>
+        <p>Browse feedback and ratings from participants</p>
+    </div>
+
+    <div id="event_filter">
+
+        <label for="eventselector">
+            Select Event
+        </label>
+
+        <select id="eventselector">
+            <option value="hackathon">Hackathon 2026</option>
+            <option value="ai">Ai workshop</option>
+            <option value="webdev">Web development bootcamp</option>
+            <option value="seminar">Data Analytics seminar</option>
+            <!-- JS events add karega -->
+
+        </select>
+
+    </div>
+
+    <div id="reviews_container">
+
+        <!-- LEFT SIDE -->
+
+        <div id="reviews_left">
+
+            <h2>
+                Reviews for
+                <h2 id="reviewfor"></h2>
+            </h2>
+            <hr>
+            <div id="reviews_list">
+
+                <!-- JS review cards insert karega -->
+
+            </div>
+
+            <div id="pagination">
+
+                <!-- JS pagination buttons insert karega -->
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div id="reviews_right">
+
+            <!-- SUMMARY -->
+
+            <div class="summary_box">
+
+                <h2>
+                    Event Summary
+                </h2>
+
+                <div class="summary_item">
+
+                    <span>
+                        Total Reviews
+                    </span>
+
+                    <span id="total_reviews">
+
+                    </span>
+
+                </div>
+
+                <div class="summary_item">
+
+                    <span>
+                        Average Rating
+                    </span>
+
+                    <span id="avg_rating">
+
+                    </span>
+
+                </div>
+
+                <div class="summary_item">
+
+                    <span>
+                        Positive Feedback
+                    </span>
+
+                    <span id="positive_feedback">
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- RATING DISTRIBUTION -->
+
+            <div class="summary_box">
+
+                <h2>
+                    Rating Distribution
+                </h2>
+
+                <div id="rating_distribution">
+
+                    <!-- JS bars create karega -->
+
+                </div>
+
+            </div>
+
+            <!-- FEEDBACK BUTTON -->
+
+            <div class="summary_box">
+
+                <h2>
+                    Share Your Feedback
+                </h2>
+
+                <p>
+                    Didn't see your review here?
+                </p>
+
+                <button id="feedback_btn">
+                    Submit New Feedback
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <script src="review.js"></script>
+</body>
+</html>>
