@@ -59,6 +59,19 @@ submit.addEventListener("click",async function(){
         rating:selectedrating,
         eventname:document.querySelector("#eventselector").value,
     };
+    if(data.name==="" || data.name===" "){
+        alert("name is required");
+        return;
+    }
+    if(data.email==="" || data.email===" "){
+        alert("email is required");
+        return;
+    }
+    if(data.msg==="" || data.msg===" "){
+        alert("feedback is required");
+        return;
+    }
+
     await fetch("http://localhost:8080/feedback",
         {
             method:"post",
@@ -68,4 +81,6 @@ submit.addEventListener("click",async function(){
             body:JSON.stringify(data)
         }
     )
+    alert("your response is saved");
+    
 })
