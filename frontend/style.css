@@ -845,7 +845,20 @@ header{
         width: 300px;
         height: 90px;
     }
+    #container{
+        height: auto;
+    }
+    #eventsdiv{
+        grid-template-columns: 1fr;
+    }
+
+    .event{
+        width:100%;
+        height: auto;
+    }
+    
 }
+
 
 /* EXTRA SMALL DEVICES */
 
